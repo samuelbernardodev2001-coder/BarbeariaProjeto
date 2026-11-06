@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+#background-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('barbearia_fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+#container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#logo {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+#status-loja {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: green;
+}
+
+#status-loja span.closed {
+  color: red;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 350px;
+  margin: 0 auto 20px;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+#links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+#funcionarios-list, #cortes-list, #avaliacoes-list {
+  max-height: 180px;
+  overflow-y: auto;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#funcionarios-list div, #cortes-list div, #avaliacoes-list div {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#funcionarios-list div:last-child, #cortes-list div:last-child, #avaliacoes-list div:last-child {
+  border-bottom: none;
+}
